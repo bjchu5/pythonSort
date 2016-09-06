@@ -16,7 +16,7 @@ def selectionsort(aList):
         for i in range(n-1):
                 min_position = i
                 for j in range(i+1, n):
-                        if aList[j] < aList[min_position]:
+                        if aList[min_position] > aList[j]:
                                 min_position = j
                 aList[i], aList[min_position] = aList[min_position], aList[i]
 
